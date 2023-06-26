@@ -15,4 +15,11 @@ class CakeListViewModel{
     init (service: DefaultCakeListService) {
         self.service = service
     }
+    
+    func fetchCakeList(complitionHandler: @escaping (APIError?) -> () ){
+        service.getCakes(completionHandler: { [weak self] (content, error) in
+            self?.cakes = content
+            complitionHandler(error)
+        })
+    }
 }
