@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AF4865C2A4A0E8B00215EAF /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4865B2A4A0E8B00215EAF /* AppEnvironment.swift */; };
 		CEF2DA7325B9B99D00DCAA34 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */; };
 		CEF6389B25B73FA7009F967A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389A25B73FA7009F967A /* AppDelegate.swift */; };
 		CEF6389D25B73FA7009F967A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389C25B73FA7009F967A /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AF4865B2A4A0E8B00215EAF /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
 		CEF6389725B73FA7009F967A /* CakeItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF6389A25B73FA7009F967A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,14 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		0AF4865A2A4A0E6E00215EAF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0AF4865B2A4A0E8B00215EAF /* AppEnvironment.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		CEF6388E25B73FA7009F967A = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 		CEF6389925B73FA7009F967A /* CakeItApp */ = {
 			isa = PBXGroup;
 			children = (
+				0AF4865A2A4A0E6E00215EAF /* Network */,
 				0AF486572A4A0D9B00215EAF /* Storyboards */,
 				0AF486562A4A0D4A00215EAF /* Application */,
 				0AF486552A4A0D1700215EAF /* Model */,
@@ -307,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF4865C2A4A0E8B00215EAF /* AppEnvironment.swift in Sources */,
 				CEF638D225B88C65009F967A /* CakeListViewController.swift in Sources */,
 				CEF2DA7325B9B99D00DCAA34 /* CakeTableViewCell.swift in Sources */,
 				CEF6389B25B73FA7009F967A /* AppDelegate.swift in Sources */,
