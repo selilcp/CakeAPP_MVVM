@@ -48,7 +48,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iKW-KK-r33">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iKW-KK-r33">
                                 <rect key="frame" x="20" y="93.999999999999986" width="374" height="233.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iKW-KK-r33" secondAttribute="height" multiplier="8:5" id="jXR-mS-dyU"/>
