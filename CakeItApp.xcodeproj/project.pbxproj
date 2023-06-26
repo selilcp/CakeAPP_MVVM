@@ -15,6 +15,7 @@
 		0AF486682A4A17DA00215EAF /* CakeListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF486672A4A17DA00215EAF /* CakeListHandler.swift */; };
 		0AF4866B2A4A190500215EAF /* CakeListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4866A2A4A190500215EAF /* CakeListService.swift */; };
 		0AF4866E2A4A1A7600215EAF /* CakeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4866D2A4A1A7600215EAF /* CakeListViewModel.swift */; };
+		0AF486742A4A1EAE00215EAF /* CakeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF486732A4A1EAE00215EAF /* CakeTableViewCell.xib */; };
 		CEF2DA7325B9B99D00DCAA34 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */; };
 		CEF6389B25B73FA7009F967A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389A25B73FA7009F967A /* AppDelegate.swift */; };
 		CEF6389D25B73FA7009F967A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389C25B73FA7009F967A /* SceneDelegate.swift */; };
@@ -54,6 +55,7 @@
 		0AF486672A4A17DA00215EAF /* CakeListHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListHandler.swift; sourceTree = "<group>"; };
 		0AF4866A2A4A190500215EAF /* CakeListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListService.swift; sourceTree = "<group>"; };
 		0AF4866D2A4A1A7600215EAF /* CakeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListViewModel.swift; sourceTree = "<group>"; };
+		0AF486732A4A1EAE00215EAF /* CakeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CakeTableViewCell.xib; sourceTree = "<group>"; };
 		CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
 		CEF6389725B73FA7009F967A /* CakeItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF6389A25B73FA7009F967A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */,
+				0AF486732A4A1EAE00215EAF /* CakeTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF638A725B73FA8009F967A /* LaunchScreen.storyboard in Resources */,
+				0AF486742A4A1EAE00215EAF /* CakeTableViewCell.xib in Resources */,
 				CEF638A425B73FA8009F967A /* Assets.xcassets in Resources */,
 				CEF638A225B73FA7009F967A /* Main.storyboard in Resources */,
 			);
