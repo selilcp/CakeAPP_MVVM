@@ -44,7 +44,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qrx-of-bhY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qrx-of-bhY">
                                 <rect key="frame" x="0.0" y="12" width="123" height="123"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Qrx-of-bhY" secondAttribute="height" multiplier="1:1" id="PkJ-zJ-5Ya"/>
