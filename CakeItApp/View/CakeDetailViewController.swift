@@ -14,9 +14,20 @@ class CakeDetailViewController: UIViewController {
     @IBOutlet private weak var descriptionLabel: UILabel!
     
 
+    var viewModel:CakeDetailViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = "cake title"
-        descriptionLabel.text = "cake description"        
+        populateData()
+    }
+    
+    func populateData(){
+        title = viewModel?.cake.title
+        titleLabel.text = viewModel?.cake.title
+        descriptionLabel.text = viewModel?.cake.desc
+        if let imageURLSting = viewModel?.cake.image,
+           let imageURL = URL(string: imageURLSting){
+            cakeImageView.loadImageWithURL(imageURL)
+        }
     }
 }
