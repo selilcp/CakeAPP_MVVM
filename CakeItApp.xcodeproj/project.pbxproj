@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0AF4865C2A4A0E8B00215EAF /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4865B2A4A0E8B00215EAF /* AppEnvironment.swift */; };
+		0AF4865F2A4A0EE300215EAF /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4865E2A4A0EE300215EAF /* APIPath.swift */; };
 		CEF2DA7325B9B99D00DCAA34 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */; };
 		CEF6389B25B73FA7009F967A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389A25B73FA7009F967A /* AppDelegate.swift */; };
 		CEF6389D25B73FA7009F967A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389C25B73FA7009F967A /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0AF4865B2A4A0E8B00215EAF /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		0AF4865E2A4A0EE300215EAF /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
 		CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
 		CEF6389725B73FA7009F967A /* CakeItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF6389A25B73FA7009F967A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				0AF4865B2A4A0E8B00215EAF /* AppEnvironment.swift */,
+				0AF4865E2A4A0EE300215EAF /* APIPath.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				CEF638DC25B99C2C009F967A /* Cake.swift in Sources */,
 				CEF6389D25B73FA7009F967A /* SceneDelegate.swift in Sources */,
 				CEF638D725B998C8009F967A /* CakeDetailViewController.swift in Sources */,
+				0AF4865F2A4A0EE300215EAF /* APIPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
