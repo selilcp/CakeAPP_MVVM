@@ -11,8 +11,7 @@ class CakeListViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    var i = 0
-    var cakes: [Cake] = []
+    var viewModel:CakeListViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,40 +19,48 @@ class CakeListViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         registerCakeListCell(tableView: tableView)
+        viewModel = CakeListViewModel(service: DefaultCakeListService())
+        fetchData()
     }
     
     func registerCakeListCell(tableView:UITableView){
         let nib = UINib(nibName: "CakeTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "CakeTableViewCell")
     }
+    
+    func fetchData(){
+        viewModel?.fetchCakeList(complitionHandler: { error in
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        })
+    }
 }
 
 extension CakeListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        i = indexPath.row
-        performSegue(withIdentifier: "segue", sender: tableView)
+        
     }
     
 }
 
 extension CakeListViewController: UITableViewDataSource {
     
-    
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return cakes.count
+        return viewModel?.cakesCount ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CakeTableViewCell") as! CakeTableViewCell
-        let cake = cakes[indexPath.row]
-        cell.titleLabel.text = cake.title
-        cell.descLabel.text = cake.desc
-        
-        
-        
-        
-        let imageURL = URL(string: cake.image)!
+        let cake = viewModel?.getCakeWithPosition(pos: indexPath.item)
+        cell.titleLabel.text = cake?.title
+        cell.descLabel.text = cake?.desc
+        let imageURL = URL(string: cake!.image)!
         
         guard let imageData = try? Data(contentsOf: imageURL) else { return cell }
             
