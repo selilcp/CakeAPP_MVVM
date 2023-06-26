@@ -13,6 +13,7 @@
 		0AF486632A4A0FE100215EAF /* APILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF486622A4A0FE100215EAF /* APILoader.swift */; };
 		0AF486652A4A0FF800215EAF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF486642A4A0FF800215EAF /* APIError.swift */; };
 		0AF486682A4A17DA00215EAF /* CakeListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF486672A4A17DA00215EAF /* CakeListHandler.swift */; };
+		0AF4866B2A4A190500215EAF /* CakeListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4866A2A4A190500215EAF /* CakeListService.swift */; };
 		CEF2DA7325B9B99D00DCAA34 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */; };
 		CEF6389B25B73FA7009F967A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389A25B73FA7009F967A /* AppDelegate.swift */; };
 		CEF6389D25B73FA7009F967A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389C25B73FA7009F967A /* SceneDelegate.swift */; };
@@ -50,6 +51,7 @@
 		0AF486622A4A0FE100215EAF /* APILoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoader.swift; sourceTree = "<group>"; };
 		0AF486642A4A0FF800215EAF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		0AF486672A4A17DA00215EAF /* CakeListHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListHandler.swift; sourceTree = "<group>"; };
+		0AF4866A2A4A190500215EAF /* CakeListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListService.swift; sourceTree = "<group>"; };
 		CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
 		CEF6389725B73FA7009F967A /* CakeItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF6389A25B73FA7009F967A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,14 @@
 			path = APIHandlers;
 			sourceTree = "<group>";
 		};
+		0AF486692A4A18E600215EAF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0AF4866A2A4A190500215EAF /* CakeListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		CEF6388E25B73FA7009F967A = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				0AF4865A2A4A0E6E00215EAF /* Network */,
+				0AF486692A4A18E600215EAF /* Service */,
 				0AF486572A4A0D9B00215EAF /* Storyboards */,
 				0AF486562A4A0D4A00215EAF /* Application */,
 				0AF486552A4A0D1700215EAF /* Model */,
@@ -349,6 +360,7 @@
 				CEF6389D25B73FA7009F967A /* SceneDelegate.swift in Sources */,
 				0AF486612A4A0F9700215EAF /* APIHandler.swift in Sources */,
 				0AF486632A4A0FE100215EAF /* APILoader.swift in Sources */,
+				0AF4866B2A4A190500215EAF /* CakeListService.swift in Sources */,
 				CEF638D725B998C8009F967A /* CakeDetailViewController.swift in Sources */,
 				0AF4865F2A4A0EE300215EAF /* APIPath.swift in Sources */,
 				0AF486682A4A17DA00215EAF /* CakeListHandler.swift in Sources */,
