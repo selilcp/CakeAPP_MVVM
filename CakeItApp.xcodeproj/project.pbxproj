@@ -108,6 +108,24 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		0AF486582A4A0DDD00215EAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AF486592A4A0DF900215EAF /* TableViewCells */,
+				CEF638D625B998C8009F967A /* CakeDetailViewController.swift */,
+				CEF638D125B88C65009F967A /* CakeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0AF486592A4A0DF900215EAF /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		CEF6388E25B73FA7009F967A = {
 			isa = PBXGroup;
 			children = (
@@ -134,9 +152,7 @@
 				0AF486572A4A0D9B00215EAF /* Storyboards */,
 				0AF486562A4A0D4A00215EAF /* Application */,
 				0AF486552A4A0D1700215EAF /* Model */,
-				CEF638D625B998C8009F967A /* CakeDetailViewController.swift */,
-				CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */,
-				CEF638D125B88C65009F967A /* CakeListViewController.swift */,
+				0AF486582A4A0DDD00215EAF /* View */,
 				CEF638A325B73FA8009F967A /* Assets.xcassets */,
 				CEF638A825B73FA8009F967A /* Info.plist */,
 			);
