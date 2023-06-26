@@ -72,6 +72,11 @@
                     <constraint firstAttribute="bottom" secondItem="vPx-Ab-Y9u" secondAttribute="bottom" id="ev7-z1-IZf"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="cakeImageView" destination="Qrx-of-bhY" id="gNx-5i-s7N"/>
+                <outlet property="descLabel" destination="Vfv-zO-Nq4" id="kCw-hD-d90"/>
+                <outlet property="titleLabel" destination="I83-gF-G2U" id="0SH-hf-mP1"/>
+            </connections>
             <point key="canvasLocation" x="244.27480916030532" y="-15.140845070422536"/>
         </tableViewCell>
     </objects>
