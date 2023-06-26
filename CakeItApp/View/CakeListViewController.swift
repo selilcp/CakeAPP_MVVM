@@ -16,20 +16,15 @@ class CakeListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "🎂CakeItApp🍰"
         tableView.dataSource = self
         tableView.delegate = self
-        title = "🎂CakeItApp🍰"
-        
-        let url = URL(string: "https://gist.githubusercontent.com/hart88/79a65d27f52cbb74db7df1d200c4212b/raw/ebf57198c7490e42581508f4f40da88b16d784ba/cakeList")!
-        let request = URLRequest(url: url)
-        
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            if let decodedResponse = try? JSONDecoder().decode([Cake].self, from: data!) {
-                self.cakes = decodedResponse
-                self.tableView.reloadData()
-                return
-            }
-        }.resume()
+        registerCakeListCell(tableView: tableView)
+    }
+    
+    func registerCakeListCell(tableView:UITableView){
+        let nib = UINib(nibName: "CakeTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "CakeTableViewCell")
     }
 }
 
@@ -50,7 +45,7 @@ extension CakeListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CakeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CakeTableViewCell") as! CakeTableViewCell
         let cake = cakes[indexPath.row]
         cell.titleLabel.text = cake.title
         cell.descLabel.text = cake.desc
