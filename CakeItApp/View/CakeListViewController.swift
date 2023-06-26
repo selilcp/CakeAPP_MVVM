@@ -12,6 +12,7 @@ class CakeListViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     var viewModel:CakeListViewModel?
+    private var pullControl:UIRefreshControl?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class CakeListViewController: UIViewController {
         registerCakeListCell(tableView: tableView)
         viewModel = CakeListViewModel(service: DefaultCakeListService())
         fetchData()
+        addPullToRefreshList(tableView: tableView)
     }
     
     func registerCakeListCell(tableView:UITableView){
@@ -68,6 +70,20 @@ extension CakeListViewController: UITableViewDataSource {
                       description: cake?.desc,
                       imageURL: cake?.image)
         return cell
+    }
+}
+
+extension CakeListViewController{
+
+    func addPullToRefreshList(tableView:UITableView){
+        pullControl = UIRefreshControl()
+        pullControl?.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        pullControl?.addTarget(self, action: #selector(refreshListData(_:)), for: .valueChanged)
+        tableView.refreshControl = pullControl
+    }
+    @objc private func refreshListData(_ sender: Any) {
+        pullControl?.endRefreshing()
+        fetchData()
     }
 }
 
