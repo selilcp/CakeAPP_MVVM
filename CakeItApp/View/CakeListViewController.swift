@@ -39,7 +39,13 @@ class CakeListViewController: UIViewController {
 
 extension CakeListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        guard let selectedCake = viewModel?.getCakeWithPosition(pos: indexPath.item)
+        else { return }
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = story.instantiateViewController(identifier: "CakeDetailViewController") as? CakeDetailViewController{
+            vc.viewModel = CakeDetailViewModel(cake: selectedCake)
+            self.show(vc, sender: self)
+        }
     }
     
 }
