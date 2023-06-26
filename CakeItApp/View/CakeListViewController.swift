@@ -58,16 +58,9 @@ extension CakeListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CakeTableViewCell") as! CakeTableViewCell
         let cake = viewModel?.getCakeWithPosition(pos: indexPath.item)
-        cell.titleLabel.text = cake?.title
-        cell.descLabel.text = cake?.desc
-        let imageURL = URL(string: cake!.image)!
-        
-        guard let imageData = try? Data(contentsOf: imageURL) else { return cell }
-            
-            let image = UIImage(data: imageData)
-            DispatchQueue.main.async {
-            cell.cakeImageView.image = image
-            }
+        cell.updateUI(title: cake?.title,
+                      description: cake?.desc,
+                      imageURL: cake?.image)
         return cell
     }
 }
